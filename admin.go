@@ -271,7 +271,7 @@ func Load(r io.Reader) error {
 
 // DefaultAdminListen is the address for the admin
 // listener, if none is specified at startup.
-var DefaultAdminListen = "localhost:2019"
+var DefaultAdminListen = "0.0.0.0:2019"
 
 var bufPool = sync.Pool{
 	New: func() interface{} {
